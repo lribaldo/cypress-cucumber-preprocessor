@@ -4,7 +4,8 @@
   "description": "Run gherkin-syntaxed specs with cypress.io",
   "main": "lib/index.js",
   "scripts": {
-    "test": "eslint . && jest && npm run test:all",
+    "open": "cypress open",
+    "test": "cypress run --spec \"**/LoginSuccess.feature\"",
     "test:all": "cypress run --spec \"**/*.features\"",
     "test:each": "cypress run --spec \"**/*.feature\"",
     "test:debug": "jest && DEBUG=cypress:* cypress open\n",
@@ -59,7 +60,7 @@
   },
   "devDependencies": {
     "commitizen": "^4.0.3",
-    "cypress": "^3.4.1",
+    "cypress": "^3.8.3",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^13.0.0",
@@ -90,5 +91,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false
   }
 }

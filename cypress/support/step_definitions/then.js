@@ -1,5 +1,10 @@
 import { Then } from "cypress-cucumber-preprocessor/steps";
 
-Then('the account is created', () => {
-    console.log('testando!!!');
+Then('response for {string} is {string}', ($field,$response) => {
+    switch ($field) {
+        case "securityRiskRating": 
+            break;
+        default:
+            break;
+    }
 });

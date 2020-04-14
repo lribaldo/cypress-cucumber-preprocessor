@@ -1,4 +1,2 @@
 // methods
-async function navigateToSignIn () {
-    
-}
+async function navigateToSignIn() {}

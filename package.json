@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "open": "cypress open",
-    "test": "cypress run --spec \"**/LoginSuccess.feature\"",
+    "test": "cypress run --spec \"**/Test.feature\"",
     "test:all": "cypress run --spec \"**/*.features\"",
     "test:each": "cypress run --spec \"**/*.feature\"",
     "test:debug": "jest && DEBUG=cypress:* cypress open\n",
